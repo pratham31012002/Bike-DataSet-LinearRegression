@@ -1,6 +1,6 @@
 rm(list = ls())
-setwd("~/Downloads")
-data = read.csv('day.csv')
+setwd("~/Downloads") # Note: Set the working directory to the path where you download the dataset
+data = read.csv('day.csv') 
 #data = data[-c(442), ] #Removing outliers for Model 1
 data = data[-c(2, 27, 65, 66, 239, 249, 250, 328, 668), ] #Removing outliers for the final model
 attach(data)
